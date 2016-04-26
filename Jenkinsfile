@@ -20,7 +20,7 @@ def executeBuild() {
 	node('docker') {
 		executeBuildStep {
 			checkout scm
-			sh './build-project.sh'
+			sh './ci-build-project.sh'
 		}
 	}
 }
