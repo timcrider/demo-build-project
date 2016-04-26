@@ -18,6 +18,7 @@ def executeBuildStep(step) {
 
 def executeBuild() {
 	node('docker') {
+		stage "Execute Build"
 		executeBuildStep {
 			checkout scm
 			sh './ci-build-project.sh'
@@ -27,6 +28,7 @@ def executeBuild() {
 
 def completeBuild() {
 	node('docker') {
+		stage "Complete Build"
 		executeBuildStep {
 			sh 'echo "Build Completed"'
 		}
