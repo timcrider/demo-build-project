@@ -24,6 +24,6 @@ printHeader () {
 	echo
 }
 
-export -f printHeader
+#export -f printHeader
 
 printHeader " Post Build Phase "
