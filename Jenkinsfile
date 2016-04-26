@@ -28,7 +28,7 @@ def executeBuild() {
 def completeBuild() {
 	node('docker') {
 		executeBuildStep {
-			sh './ci-post-build.sh'
+			sh 'echo "Build Completed"'
 		}
 	}
 
