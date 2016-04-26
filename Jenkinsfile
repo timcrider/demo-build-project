@@ -3,7 +3,7 @@ try {
 	currentBuild.result = 'SUCCESS'
 } catch (e) {
 	currentBuild.result = 'UNSTABLE'
-	org.codehaus.groovy.runtime.StackTraceUtils.sanitize(e).printStackTrace()
+//	org.codehaus.groovy.runtime.StackTraceUtils.sanitize(e).printStackTrace()
 } finally {
 	completeBuild();
 }
