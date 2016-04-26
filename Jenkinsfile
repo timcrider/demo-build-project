@@ -10,7 +10,7 @@ try {
 
 def executeBuildStep(step) {
 	wrap([$class: 'AnsiColorBuildWrapper']) {
-		wrap({$class: 'TimestamperBuildWrapper']) {
+		wrap([$class: 'TimestamperBuildWrapper']) {
 			step()
 		}
 	}
