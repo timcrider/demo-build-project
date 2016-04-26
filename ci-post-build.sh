@@ -1,3 +1,4 @@
+#!/bin/bash
 ###############################################################################
 # Simple Build Script
 ###############################################################################
@@ -7,23 +8,8 @@
 #
 # Load the build environment
 #
-#MY_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-#source ./build-tools/build-env.sh
+MY_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-#
-# Decorations
-#
-export THIN_LINE="--------------------------------------------------------------------------------"
-export THICK_LINE="==============================================================================="
-
-printHeader () {
-	echo
-	echo $THIN_LINE
-	echo "$1"
-	echo $THIN_LINE
-	echo
-}
-
-#export -f printHeader
+source ./build-tools/build-env.sh
 
 printHeader " Post Build Phase "
